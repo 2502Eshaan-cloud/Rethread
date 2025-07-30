@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Section</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #ffffff;
+      padding: 15px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+
+    .left-section {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #259c43;
+      cursor: pointer;
+    }
+
+    .middle-section {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .middle-section input[type="text"] {
+      padding: 8px 12px;
+      width: 250px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .middle-section select {
+      padding: 8px 12px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    .content-wrapper {
+      margin-top: 100px; /* Space from top */
+    }
+
+    h2 {
+      text-align: center;
+      color: #259c43;
+      margin-bottom: 30px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 30px;
+      padding: 0 40px 40px;
+    }
+
+    .product-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .product-card:hover {
+      transform: scale(1.03);
+    }
+
+    .product-image {
+      height: 150px;
+      background-color: #dfe6e3;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .product-title {
+      color: #259c43;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="left-section">🛒 Cart</div>
+
+    <div class="middle-section">
+      <input type="text" placeholder="Search products...">
+      <select>
+        <option value="">Filters</option>
+        <option value="clothes">Clothes</option>
+        <option value="bags">Bags</option>
+        <option value="rugs">Rugs</option>
+        <option value="pillow">Pillow Covers</option>
+        <option value="bed">Bed Sheets</option>
+        <option value="sofa">Sofa Covers</option>
+      </select>
+    </div>
+  </header>
+
+  <div class="content-wrapper">
+    <h2>Our Products</h2>
+
+    <div class="product-grid">
+      <div class="product-card">
+        <div class="product-image"></div>
+        <div class="product-title">Clothes</div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image"></div>
+        <div class="product-title">Bags</div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image"></div>
+        <div class="product-title">Rugs</div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image"></div>
+        <div class="product-title">Pillow Covers</div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image"></div>
+        <div class="product-title">Bed Sheets</div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image"></div>
+        <div class="product-title">Sofa Covers</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
